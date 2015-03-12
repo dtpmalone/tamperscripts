@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tc.zwergenviertel
 // @namespace    com.tangledcode
-// @version      0.1
+// @version      0.2
 // @description  visual aid for the zwergenviertel forum
 // @author       Daniel Malone
 // @match        http://www.zwergenviertel.de/*
@@ -10,7 +10,7 @@
 
 String.prototype.endsWith = function(suffix) {
   return this.slice(-suffix.length) == suffix;
-}
+};
 
 function setChildTransparent(index, element) {
   var $td = $(element);
@@ -20,22 +20,33 @@ function setChildTransparent(index, element) {
 
 function setRowTransparent(index, element) {
   var $td = $(element);
-  var src = $td.find('img').attr('src');
+  var $img = $td.find('img');
 
-  if (src.endsWith('off.png') || src.endsWith('redirect.png')) {
+  if (!$img) return;
+
+  var src = $img.attr('src');
+
+  if (!src) {
+    $td.parent().css(transparent);
+  } else if (src.endsWith('new.gif')) {
+    $img.remove();
+  } else if (src.endsWith('off.png') || src.endsWith('redirect.png')) {
     $td.parent().css(transparent);
   }
 }
 
-var invisable = { 'display': 'none' };
+var invisable   = { 'display': 'none' };
 var transparent = { 'opacity': 0.25 };
+var collapse    = { 'border-collapse': 'inherit' };
 
 $(document).load(function() {
   var $header = $('#upper_section');
   $header.find('.user p.avatar').css(invisable);
   $header.find('.news').css(invisable);
+  $('table.table_grid').css(collapse);
 
   $('#boardindex_table td.icon').each(setRowTransparent);
+  $('#messageindex td.subject').each(setRowTransparent);
 
   $('#boardindex_table td.children').each(setChildTransparent);
 });
