@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tc.zwergenviertel
 // @namespace    com.tangledcode
-// @version      0.4
+// @version      0.5
 // @description  visual aid for the zwergenviertel forum
 // @author       Daniel Malone
 // @match        http://www.zwergenviertel.de/*
@@ -49,6 +49,7 @@ $(document).load(function() {
   $header.find('.user p.avatar').css(invisable);
   $header.find('.news').css(invisable);
   $('table.table_grid').css(collapse);
+  $('#boardindex_table > table').css(collapse);
 
   $('#boardindex_table td.icon').each(setRowTransparent);
   $('#messageindex td.subject').each(setRowTransparent);
