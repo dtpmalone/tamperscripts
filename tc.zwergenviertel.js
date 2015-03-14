@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         tc.zwergenviertel
 // @namespace    com.tangledcode
-// @version      0.5
+// @version      0.6
 // @description  visual aid for the zwergenviertel forum
 // @author       Daniel Malone
 // @match        http://www.zwergenviertel.de/*
 // @grant        GM_addStyle
+// @grant        GM_getResourceText
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
 // @resource     bootstrap https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css
 // ==/UserScript==
