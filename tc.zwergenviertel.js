@@ -1,12 +1,16 @@
 // ==UserScript==
 // @name         tc.zwergenviertel
 // @namespace    com.tangledcode
-// @version      0.2
+// @version      0.3
 // @description  visual aid for the zwergenviertel forum
 // @author       Daniel Malone
 // @match        http://www.zwergenviertel.de/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
+// @require      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js
+// @resource     bootstrap https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css
 // ==/UserScript==
+
+GM_addStyle(GM_getResourceText("bootstrap"));
 
 String.prototype.endsWith = function(suffix) {
   return this.slice(-suffix.length) == suffix;
@@ -29,6 +33,7 @@ function setRowTransparent(index, element) {
   if (!src) {
     $td.parent().css(transparent);
   } else if (src.endsWith('new.gif')) {
+    $img.parent().append('<span class="label label-success">NEW</span>');
     $img.remove();
   } else if (src.endsWith('off.png') || src.endsWith('redirect.png')) {
     $td.parent().css(transparent);
