@@ -5,11 +5,8 @@
 // @description  visual aid for the mobil reddit page
 // @author       Daniel Malone
 // @match        https://m.reddit.com/*
+// @grant        GM_addStyle
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js
 // ==/UserScript==
 
-var centered = { 'width': '800px', 'margin': 'auto' };
-
-$(document).ready(function() {
-    $('.Listing .PostAndCommentList').css(centered);
-});
+GM_addStyle('.Listing { width: 800px; margin: auto; }');
