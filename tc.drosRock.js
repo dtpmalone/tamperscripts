@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         tc.drockRock
+// @name         tc.drosRock
 // @namespace    com.tangledcode
 // @version      0.1
 // @description  visual aid for the dros rock forum
