@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tc.serienjunkies
 // @namespace    com.tangledcode
-// @version      0.1
+// @version      0.2
 // @description  download aid for serienjunkies
 // @author       Daniel Malone
 // @match        http://serienjunkies.org/*
@@ -14,6 +14,8 @@
 GM_addStyle(GM_getResourceText("bootstrap"));
 GM_addStyle('#bacon { position: fixed; top: 10px; right: 10px; width: 700px; background-color: #fff; border-color: #ddd; border-width: 1px; border-radius: 4px 4px 0 0; box-shadow: none; }');
 GM_addStyle('#bacon li { text-align: left }');
+
+var selected = { 'background-color': '#449d44'};
 
 function getTvShowName(document) {
     var rawTitle = document.getElementsByTagName('title')[0].innerHTML;
@@ -76,6 +78,7 @@ function getEpisodes(quality, title) {
 				var link = $(this).siblings('div').find('a:contains("uploaded.net")')[0];
 				if (link !== undefined) {
 					uris.push($(link).attr('href'));
+                    $(link).closest('div').css(selected);
 				}
 			}
 		}
