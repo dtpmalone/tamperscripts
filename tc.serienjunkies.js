@@ -21,7 +21,10 @@ function getTvShowName(document) {
     var rawTitle = document.getElementsByTagName('title')[0].innerHTML;
     var firstPos = rawTitle.lastIndexOf('»') + 2;
     var lastPos = firstPos + rawTitle.slice(firstPos).indexOf('–') - 1;
-    return rawTitle.slice(firstPos, lastPos);
+
+    return lastPos>firstPos
+        ? rawTitle.slice(firstPos, lastPos)
+        : rawTitle.slice(firstPos);
 }
 
 function appendTvShowContainer(title, episodes) {
@@ -91,5 +94,6 @@ $(document).ready(function() {
     var quality = '.720p.HDTV.';
     var title = getTvShowName(document);
     var episodes = getEpisodes(quality, title);
+    console.log(title, episodes);
     appendTvShowContainer(title, episodes);
 });
