@@ -26,7 +26,7 @@ $(document).ready(() => {
   // console.log('running tc.tweetdeck on load ...')
 
   // console.log('adding/over writing styles ...')
-  GM_addStyle('.column { width: 49% !important; }')
+  GM_addStyle('.column { width: 33% !important; }')
   GM_addStyle('.js-show-this-thread p { color: #fff; background-color: #38444d; border-radius: 5px; padding: 3px 8px; margin: auto; width: fit-content; text-align: center; }')
   GM_addStyle('.is-wide-columns .media-size-medium { height: 320px; }')
   GM_addStyle('.js-tweet-text .link-complex[rel="hashtag"], .js-quoted-tweet-text .link-complex[rel="hashtag"] { color: #38444d; background-color: #e1e8ed; border-radius: 5px; padding: 3px 8px; line-height: 1.8rem; }')
