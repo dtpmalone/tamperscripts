@@ -26,12 +26,13 @@ $(document).ready(() => {
   // console.log('running tc.tweetdeck on load ...')
 
   // console.log('adding/over writing styles ...')
-  GM_addStyle('.column { width: 560px !important; }')
+  GM_addStyle('.column { width: 49% !important; }')
   GM_addStyle('.js-show-this-thread p { color: #fff; background-color: #38444d; border-radius: 5px; padding: 3px 8px; margin: auto; width: fit-content; text-align: center; }')
-  GM_addStyle('.is-wide-columns .media-size-medium { height: 280px }')
+  GM_addStyle('.is-wide-columns .media-size-medium { height: 320px; }')
   GM_addStyle('.js-tweet-text .link-complex[rel="hashtag"], .js-quoted-tweet-text .link-complex[rel="hashtag"] { color: #38444d; background-color: #e1e8ed; border-radius: 5px; padding: 3px 8px; line-height: 1.8rem; }')
   GM_addStyle('.js-tweet-text .link-complex[rel="user"], .js-quoted-tweet-text .link-complex[rel="user"] { color: #fff; background-color: #1da1f2; border-radius: 5px; padding: 3px 8px; line-height: 1.8rem; }')
   GM_addStyle('.js-tweet-body { margin: 10px 0; }')
+  GM_addStyle('.item-box { padding: 20px 100px; }')
 
   replaceMediaImages()
 })
