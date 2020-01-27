@@ -2,6 +2,7 @@
 // @name         tc.tweetdeck
 // @namespace    com.tangledcode
 // @version      0.3
+// @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.tweetdeck.js
 // @description  visual aid for TweetDeck
 // @author       Daniel Malone
 // @match        https://tweetdeck.twitter.com/*
