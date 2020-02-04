@@ -37,9 +37,6 @@ $(document).ready(() => {
   GM_addStyle('.js-embeditem { height: 1200px; top :0; }')
   GM_addStyle('.js-med-tweet { display: none; }')
   GM_addStyle('.js-modal-panel { display: border: 0; background: transparent; box-shadow: none; }')
-  js-modal-panel
-
-
 
   replaceMediaImages()
 })
