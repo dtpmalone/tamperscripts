@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tc.dndbeyond
 // @namespace    com.tangledcode
-// @version      0.4
+// @version      0.1
 // @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond.js
 // @description  visual aid for D&D Beyond
 // @author       Daniel Malone
