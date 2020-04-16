@@ -13,5 +13,5 @@
 (function() {
     'use strict';
 
-    GM_addStyle('.content-unlocked { background-color: red; padding: 4px 6px; border-radius: 6px; color: white !important; }')
+    GM_addStyle('.content-unlocked { background-color: #47d18c; padding: 2px 8px; border-radius: 6px; color: #242527 !important; }')
 })();
