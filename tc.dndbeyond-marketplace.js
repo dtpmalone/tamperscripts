@@ -5,7 +5,7 @@
 // @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond-marketplace.js
 // @description  visual aid for D&D Beyond | Marketplace
 // @author       Daniel Malone
-// @match        https://www.dndbeyond.com/marketplace/*
+// @match        https://www.dndbeyond.com/marketplace
 // @grant        GM_addStyle
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
 // ==/UserScript==
