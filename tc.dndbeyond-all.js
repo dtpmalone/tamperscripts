@@ -2,7 +2,7 @@
 // @name         tc.dndbeyond
 // @namespace    com.tangledcode
 // @version      0.1
-// @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond.js
+// @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond-all.js
 // @description  visual aid for D&D Beyond | All Pages
 // @author       Daniel Malone
 // @match        https://www.dndbeyond.com/*
