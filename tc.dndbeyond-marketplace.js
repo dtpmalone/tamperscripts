@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         tc.dndbeyond
+// @name         tc.dndbeyond-marketplace
 // @namespace    com.tangledcode
 // @version      0.1
 // @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond-marketplace.js
