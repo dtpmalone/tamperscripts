@@ -13,7 +13,7 @@
   'use strict';
 
   // character labeling
-  GM_addStyle('.container .combatant-card .combatant-summary__details: focus { outline: 0!important; }');
+  GM_addStyle('.container .combatant-card .combatant-summary__details:focus { outline: 0!important; }');
 
   GM_addStyle('.container .combatant-card .combatant-card__left-bit--short { border: none; border-left-width: 6px; border-left-style: solid; border-top-left-radius: 6px; border-bottom-left-radius: 6px; width: 55px; }');
   GM_addStyle('.container .combatant-card .combatant-card__mid-bit { border-bottom-left-radius: 6px; border-right-width: 0!important; }');
