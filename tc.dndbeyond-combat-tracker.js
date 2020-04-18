@@ -43,5 +43,5 @@
   // 3 columns
   GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__combat-tracker { width: 35%; } }');
   GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__content { width: 75%; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; align-content: flex-start; } }');
-  GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__content section: not(: first-child) { margin-left: 24px; margin-top: 0; } }');
+  GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__content section:not(:first-child) { margin-left: 24px; margin-top: 0; } }');
 })();
