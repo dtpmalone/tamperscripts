@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tc.dndbeyond-all
 // @namespace    com.tangledcode
-// @version      0.2
+// @version      0.3
 // @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond-all.js
 // @description  visual aid for D&D Beyond | All Pages
 // @author       Daniel Malone
@@ -19,5 +19,5 @@
   GM_addStyle('*::-webkit-scrollbar-thumb { background-color: #c1c1c1; }');
   GM_addStyle('*::-webkit-scrollbar-thumb:hover { background-color: #a9a9a9; }');
 
-  GM_addStyle('body::-webkit-scrollbar { width: 8px; }');
+  GM_addStyle('body::-webkit-scrollbar { width: 12px; }');
 })();
