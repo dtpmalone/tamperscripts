@@ -1,15 +1,13 @@
 // ==UserScript==
 // @name         tc.printableheroes
 // @namespace    com.tangledcode
-// @version      0.2
+// @version      0.3
 // @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.printableheroes.js
 // @description  visual aid for Printable Heroes
 // @author       Daniel Malone
 // @match        https://printableheroes.com/*
 // @grant        GM_addStyle
 // ==/UserScript==
-
-console.log('adding ...');
 
 GM_addStyle('a.tc-t3-zip { background-color: #70C1B3; text-align: center; }');
 GM_addStyle('a.tc-t3-vtt { background-color: #F3FFBD; text-align: center; }');
