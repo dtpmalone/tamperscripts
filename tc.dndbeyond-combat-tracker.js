@@ -35,8 +35,8 @@
   GM_addStyle('@media screen and (min-width: 1025px) { body.responsive-enabled #site #site-main .container { max-width: 1800px!important; } }');
   GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker__combatants { max-height: fit-content; } }');
   GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__body { padding: 0; } }');
-  GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__combat-tracker { max-height: 85vh; } }');
-  GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__content-section { overflow: hidden; max-height: 85vh; } }');
+  GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__combat-tracker { height: 91vh; } }');
+  GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__content-section { overflow: hidden; max-height: 91vh; } }');
   GM_addStyle('@media screen and (min-width: 1025px) { .container .combat-tracker-page__content-section: hover { overflow: auto overlay; } }');
   GM_addStyle('@media screen and (min-width: 1025px) { #footer { display: none; } }');
 
