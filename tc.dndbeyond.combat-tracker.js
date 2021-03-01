@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         tc.dndbeyond-combat-tracker
+// @name         tc.dndbeyond.combat-tracker
 // @namespace    com.tangledcode
 // @version      0.2
-// @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond-combat-tracker.js
+// @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.dndbeyond.combat-tracker.js
 // @description  visual aid for D&D Beyond | Combat Tracker
 // @author       Daniel Malone
 // @match        https://www.dndbeyond.com/combat-tracker/*
