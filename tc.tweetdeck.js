@@ -1,26 +1,18 @@
 // ==UserScript==
 // @name         tc.tweetdeck
 // @namespace    com.tangledcode
-// @version      0.6
+// @version      0.7
 // @updateURL    https://raw.githubusercontent.com/dtpmalone/tamperscripts/master/tc.tweetdeck.js
 // @description  visual aid for TweetDeck
 // @author       Daniel Malone
 // @match        https://tweetdeck.twitter.com/*
 // @grant        GM_addStyle
-// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
-// @require      https://gist.githubusercontent.com/BrockA/2625891/raw/9c97aa67ff9c5d56be34a55ad6c18a314e5eb548/waitForKeyElements.js
+// @require      https://git.io/waitForKeyElements.js
 // ==/UserScript==
 
-function replaceMediaImages () {
-  waitForKeyElements('div.chirp-container article', (tweet) => {
-    tweet.find('.media-item').each((i, item) => {
-      const newImageUri = $(item).css('backgroundImage').replace('name=360x360', 'name=small')
-      $(item).css('backgroundImage', newImageUri)
-    })
-  })
-}
+(function() {
+  'use strict'
 
-$(document).ready(() => {
   GM_addStyle('.column { width: 33% !important; }')
   GM_addStyle('.js-show-this-thread p { color: #fff !important; background-color: #38444d; border-radius: 5px; padding: 3px 8px; margin: auto; width: fit-content; text-align: center; }')
   GM_addStyle('html.dark .is-wide-columns .media-size-medium { height: 360px; }')
@@ -32,5 +24,9 @@ $(document).ready(() => {
   GM_addStyle('html.dark .mdl-media-next, html.dark .mdl-media-prev { background: none; }')
   GM_addStyle('html.dark .med-embeditem { top: 0; bottom: 0; height: 100% }')
 
-  replaceMediaImages()
-})
+  waitForKeyElements('div.chirp-container article', (tweet) => {
+    tweet.querySelectorAll('.media-item').forEach((item) => {
+      item.style.backgroundImage = item.style.backgroundImage.replace('name=360x360', 'name=small')
+    })
+  })
+})()
